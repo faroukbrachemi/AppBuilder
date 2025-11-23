@@ -1,15 +1,11 @@
 # MiniAppBuilder — Automatic Mini-App Generator
 
-This project is an **agentic AI system** that can plan, architect, and generate complete mini web applications from a single natural-language prompt.  
-It uses **LangGraph**, **LangChain**, and an LLM to coordinate multiple agents (Planner, Architect, Coder) and produce a fully structured project folder with ready-to-run code.
-
-<video width="640" height="360" controls>
-  <source src="graphics/AppBuilderDemo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+This project is an **agentic AI system** that can plan, architect, and generate complete mini web applications from a single natural-language prompt. It uses **LangGraph**, **LangChain**, and an LLM to coordinate multiple agents (Planner, Architect, Coder) and produce a fully structured project folder with ready-to-run code.
 
 
----
+
+https://github.com/user-attachments/assets/1128eebe-0b64-411e-8d6b-a2b3847a0901
+
 
 ## System Architecture
 
@@ -21,7 +17,7 @@ Converts a user prompt into a structured high-level plan.
 ### **🧩 Architect Agent**
 Breaks the plan into technical steps and file-level tasks.
 
-### ### **💻 Coder Agent**
+### **💻 Coder Agent**
 Uses tools to automatically create the project files.
 
 <div style="text-align: center;">
@@ -59,23 +55,28 @@ AppBuilder/
 ```bash
 git clone https://github.com/faroukbrachemi/AppBuilder.git
 cd AppBuilder
+```
 
-2. **Set up the environment
+2. **Set up the environment**
 ```bash
 uv init
 uv sync
+```
 
-3. **Activate the virtual environment
+3. **Activate the virtual environment**
 ```bash
 source .venv/bin/activate
+```
 
-4. **Copy the sample file and add your API key
+4. **Copy the sample file and add your API key**
 ```bash
 cp .sample_env .env
+```
 
-5. **Run the project
+5. **Run the project**
+```bash
 python main.py
-
+```
 
 ## 🧪 **Example Prompts**
 
@@ -88,5 +89,3 @@ python main.py
 ## 📌 **Notes**
 - Each run generates a fully contained project folder with all required files.  
 - If you want to generate another project you have to delete the previous one.
-
----
